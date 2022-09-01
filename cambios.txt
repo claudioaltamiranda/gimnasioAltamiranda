@@ -15,3 +15,8 @@ h2 como subtítulos con clases-extra para su correspondiente formateo
 .gitignore
 ignora node_modules/
 
+LightHouse me da
+performance: 87%
+accessibility: 100%
+best practices: 100%
+SEO: 100%

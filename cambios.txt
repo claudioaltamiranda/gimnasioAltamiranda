@@ -20,3 +20,5 @@ performance: 87%
 accessibility: 100%
 best practices: 100%
 SEO: 100%
+
+imágenes en formato WEBP

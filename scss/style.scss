@@ -1,0 +1,139 @@
+/* SCSS Variables */
+$fuente-color: rgba(0, 0, 0, 0.7);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bgPropio {
+  background: linear-gradient(to top right, #50310d 0%, #ecd77a 100%);
+}
+
+.textOrange {
+  color: orange;
+}
+
+/* GIMNASIO.HTML */
+.imgCarousel {
+  display: none;
+  width: 100vw;
+  max-width: 800px;
+  object-fit: cover;
+}
+
+#carousel--gimnasio {
+  max-width: 800px;
+}
+
+.slide--caption {
+  font-size: 1.5rem;
+}
+
+/* TESTIMONIOS.HTML */
+.card--img__rounded_ {
+  height: 13rem;
+  width: 13rem;
+  align-self: center;
+  border-radius: 50%;
+}
+
+.card--img__marco_ {
+  border: 5px solid rgba(128, 128, 128, 0.3);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+/* STAFF.HTML, UNA ANIMACION */
+.animadoLadoALado {
+  font-weight: bold;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/* TESTIMONIOS.HTML, UNA ANIMACION, HOVER */
+.animadoColor {
+  font-weight: bold;
+  animation-duration: 3s;
+  animation-name: cambiaColor;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes cambiaColor {
+  from {
+    color: black;
+  }
+
+  to {
+    color: orange;
+  }
+}
+
+.card:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 10px black;
+}
+
+/* CONTACTO.HTML, HOVER */
+input:hover,
+textarea:hover {
+  box-shadow: 2px 2px 4px black;
+}
+
+/* SCSS MAPS */
+$fuente-label: (
+  "tamano": 1.5rem,
+  "color": $fuente-color,
+);
+
+.form-label {
+  font-size: map-get($fuente-label, "tamano");
+  color: map-get($fuente-label, "color");
+}
+
+/* SCSS MIXIN */
+@mixin parrafos($size) {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: $size;
+  color: $fuente-color;
+}
+
+.parrafo {
+  @include parrafos(0.8rem);
+  letter-spacing: 1px;
+  font-style: italic;
+
+  &:hover {
+    font-weight: bold;
+  }
+}
+
+/* SCSS Extend */
+.parrafo--staff {
+  @extend .parrafo;
+  letter-spacing: normal;
+  font-style: normal;
+}
+
+.card-body {
+  h2 {
+    color: $fuente-color;
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "gimnasio_altamiranda",
+  "version": "1.0.0",
+  "description": "gimnasio Axis - proyecto para el curso de diseño web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-scss": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "keywords": [
+    "gimnasio",
+    "axisgim",
+    "azul",
+    "entrenamiento",
+    "fuerza",
+    "pesas"
+  ],
+  "author": "claudio altamiranda",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

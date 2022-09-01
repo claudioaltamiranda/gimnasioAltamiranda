@@ -1,0 +1,17 @@
+// Cambios en la 3ra entrega del trabajo final
+
+scss/style.scss
+ 99: un map y los correspondientes map-get
+110: mixin y el @include 
+127: extend
+Aparte: variables, uso de & con hover, anidamiento, etc 
+
+En todos los HTML:
+name keywords
+name description 
+1 h1 en cada .html 
+h2 como subtítulos con clases-extra para su correspondiente formateo
+
+.gitignore
+ignora node_modules/
+

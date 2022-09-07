@@ -22,3 +22,16 @@ best practices: 100%
 SEO: 100%
 
 imágenes en formato WEBP: subi la performance de 87% a 96%
+
+Cambio: 
+    hero en index.html con scss/_hero.scss 
+    para importar
+
+Para realizar:
+    todas las fotografías reales 
+    textos reales 
+    convertir la sintaxis css en los archivos scss para aprovechar
+        las ventajas de sass 
+    variables globales para los colores del sitio reflejando la 
+        marca
+

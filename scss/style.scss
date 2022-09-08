@@ -1,10 +1,13 @@
 /* SCSS Variables */
 $fuente-color: rgba(0, 0, 0, 0.7);
 
+@import "variables";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $fuente--principal;
 }
 
 .bg--principal {
@@ -12,11 +15,11 @@ $fuente-color: rgba(0, 0, 0, 0.7);
 }
 
 .textOrange {
-  color: orange;
+  color: $color--texto;
 }
 
 /* GIMNASIO.HTML */
-.imgCarousel {
+.img--carousel {
   display: none;
   width: 100vw;
   max-width: 800px;
@@ -31,19 +34,27 @@ $fuente-color: rgba(0, 0, 0, 0.7);
   font-size: 1.5rem;
 }
 
+.slide--caption__personalizado {
+  font-weight: 700;
+}
+
+.slide--text__personalizado {
+  font-weight: 300;
+}
+
 /* TESTIMONIOS.HTML */
-.card--img__rounded_ {
+/* .card--img__rounded_ {
   height: 13rem;
   width: 13rem;
   align-self: center;
   border-radius: 50%;
-}
+} */
 
-.card--img__marco_ {
+/* .card--img__marco_ {
   border: 5px solid rgba(128, 128, 128, 0.3);
   padding: 5px;
   border-radius: 50%;
-}
+} */
 
 /* STAFF.HTML, UNA ANIMACION */
 .animadoLadoALado {
@@ -129,6 +140,10 @@ $fuente-label: (
   @extend .parrafo;
   letter-spacing: normal;
   font-style: normal;
+}
+
+.card--color {
+  background-color: $card--fondo;
 }
 
 .card-body {

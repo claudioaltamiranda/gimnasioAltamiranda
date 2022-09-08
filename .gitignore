@@ -1,3 +1,4 @@
 node_modules/
 cwebp.exe
-*.exe
+*.exe 
+*.zip
